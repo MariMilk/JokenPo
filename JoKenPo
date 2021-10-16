@@ -1,0 +1,45 @@
+from random import randint
+from time import sleep
+print('Este é o jogo JOKENPÔ, seja bem-vindo!')
+print('''Escolha sua jogada: 
+[1] Pedra ✊
+[2] Papel 🖐️
+[3] Tesoura ✌🏻 ''')
+jogada = int(input('Qual a jogada?  '))
+print('-='*20)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PÔ!!')
+print('-='*20)
+
+r = randint(1, 3)
+
+if jogada == 1 and r == 1:
+    print('Pedra ✊')
+    print('Empatou')
+elif jogada == 1 and r == 2:
+    print('Papel 🖐️')
+    print('Venci!')
+elif jogada == 1 and r == 3:
+    print('Tesoura ✌🏻')
+    print('Você venceu')
+elif jogada == 2 and r == 1:
+    print('Pedra ✊')
+    print('Você venceu')
+elif jogada == 2 and r == 2:
+    print('Papel 🖐️')
+    print('Empatou')
+elif jogada == 2 and r == 3:
+    print('Tesoura ✌')
+    print('Venci!')
+elif jogada == 3 and r == 1:
+    print('Pedra ✊')
+    print('Venci!')
+elif jogada == 3 and r == 2:
+    print('Papel 🖐️')
+    print('Você venceu')
+elif jogada == 3 and r == 3:
+    print('Tesoura ✌')
+    print('Empatou')
